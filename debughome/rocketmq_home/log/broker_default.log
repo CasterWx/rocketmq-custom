@@ -1,0 +1,708 @@
+2021-02-04 11:48:05 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-04 11:48:06 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@491cc5c9
+2021-02-04 11:48:06 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@462d5aee
+2021-02-04 11:48:06 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@69b0fd6f
+2021-02-04 11:48:06 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@757942a1
+2021-02-04 11:48:06 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2d9d4f9d
+2021-02-04 11:48:06 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4034c28c
+2021-02-04 11:48:06 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e50a6f6
+2021-02-04 11:48:06 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@14ec4505
+2021-02-04 11:48:07 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 11:48:07 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 11:48:08 WARN NettyClientSelector_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:638) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:634) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:48:23 WARN NettyClientSelector_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:638) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:634) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:48:53 WARN NettyClientSelector_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:638) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:634) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:49:24 WARN NettyClientSelector_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:638) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:634) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:49:53 WARN NettyClientSelector_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:638) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:634) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:50:23 WARN NettyClientSelector_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:638) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:634) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:50:53 WARN NettyClientSelector_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:638) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:634) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:51:23 WARN NettyClientSelector_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:638) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:634) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:51:53 WARN NettyClientSelector_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:638) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingClient$NettyClientHandler.channelRead0(NettyRemotingClient.java:634) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:51:54 WARN NettyServerNIOSelector_3_1 - An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.lang.NullPointerException: null
+	at java.lang.String.<init>(String.java:566) ~[na:1.8.0_251]
+	at org.apache.rocketmq.remoting.protocol.RemotingCommand.toString(RemotingCommand.java:532) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingAbstract.processMessageReceived(NettyRemotingAbstract.java:147) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:397) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingServer$NettyServerHandler.channelRead0(NettyRemotingServer.java:393) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:353) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:346) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingServer$HandshakeHandler.channelRead0(NettyRemotingServer.java:389) ~[classes/:na]
+	at org.apache.rocketmq.remoting.netty.NettyRemotingServer$HandshakeHandler.channelRead0(NettyRemotingServer.java:331) ~[classes/:na]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:367) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.access$600(AbstractChannelHandlerContext.java:36) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.AbstractChannelHandlerContext$7.run(AbstractChannelHandlerContext.java:358) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:41) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:52:37 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-04 11:52:37 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@442675e1
+2021-02-04 11:52:37 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c72da34
+2021-02-04 11:52:37 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6b0c2d26
+2021-02-04 11:52:37 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3fcdb0
+2021-02-04 11:52:38 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d680b5a
+2021-02-04 11:52:38 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4b5d6a01
+2021-02-04 11:52:38 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a22f9e2
+2021-02-04 11:52:38 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c419631
+2021-02-04 11:52:38 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 11:52:38 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:36:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-04 12:36:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@491cc5c9
+2021-02-04 12:36:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@462d5aee
+2021-02-04 12:36:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@69b0fd6f
+2021-02-04 12:36:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@757942a1
+2021-02-04 12:36:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2d9d4f9d
+2021-02-04 12:36:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4034c28c
+2021-02-04 12:36:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e50a6f6
+2021-02-04 12:36:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@14ec4505
+2021-02-04 12:36:41 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:36:41 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:38:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3aeaafa6
+2021-02-04 12:38:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49e202ad
+2021-02-04 12:38:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3fcdb0
+2021-02-04 12:38:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@641147d0
+2021-02-04 12:38:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e38921c
+2021-02-04 12:38:14 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a22f9e2
+2021-02-04 12:38:14 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c419631
+2021-02-04 12:38:14 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@418e7838
+2021-02-04 12:38:14 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61230f6a
+2021-02-04 12:38:14 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:38:14 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:38:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3ee37e5a
+2021-02-04 12:38:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@50dfbc58
+2021-02-04 12:38:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1fb19a0
+2021-02-04 12:38:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6ee4d9ab
+2021-02-04 12:38:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5a5338df
+2021-02-04 12:38:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@7a560583
+2021-02-04 12:38:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4d722ac9
+2021-02-04 12:38:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@53f0a4cb
+2021-02-04 12:38:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@77a7cf58
+2021-02-04 12:38:41 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:38:41 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:39:54 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-04 12:39:54 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49e202ad
+2021-02-04 12:39:54 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3fcdb0
+2021-02-04 12:39:54 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@641147d0
+2021-02-04 12:39:54 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e38921c
+2021-02-04 12:39:54 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a22f9e2
+2021-02-04 12:39:54 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c419631
+2021-02-04 12:39:54 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@418e7838
+2021-02-04 12:39:54 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61230f6a
+2021-02-04 12:39:54 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:39:54 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:41:40 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-04 12:41:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@442675e1
+2021-02-04 12:41:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c72da34
+2021-02-04 12:41:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6b0c2d26
+2021-02-04 12:41:41 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3fcdb0
+2021-02-04 12:41:42 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d680b5a
+2021-02-04 12:41:42 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4b5d6a01
+2021-02-04 12:41:42 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a22f9e2
+2021-02-04 12:41:42 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c419631
+2021-02-04 12:41:42 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:41:42 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:41:43 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-04 12:41:43 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49e202ad
+2021-02-04 12:41:43 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3fcdb0
+2021-02-04 12:41:43 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@641147d0
+2021-02-04 12:41:43 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e38921c
+2021-02-04 12:41:44 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a22f9e2
+2021-02-04 12:41:44 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c419631
+2021-02-04 12:41:44 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@418e7838
+2021-02-04 12:41:44 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61230f6a
+2021-02-04 12:41:44 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:41:44 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:47:28 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-04 12:47:28 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@442675e1
+2021-02-04 12:47:28 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c72da34
+2021-02-04 12:47:28 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6b0c2d26
+2021-02-04 12:47:28 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3fcdb0
+2021-02-04 12:47:28 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d680b5a
+2021-02-04 12:47:28 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4b5d6a01
+2021-02-04 12:47:28 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a22f9e2
+2021-02-04 12:47:28 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c419631
+2021-02-04 12:47:28 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:47:28 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:47:34 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-04 12:47:34 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49e202ad
+2021-02-04 12:47:34 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3fcdb0
+2021-02-04 12:47:34 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@641147d0
+2021-02-04 12:47:34 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e38921c
+2021-02-04 12:47:35 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a22f9e2
+2021-02-04 12:47:35 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c419631
+2021-02-04 12:47:35 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@418e7838
+2021-02-04 12:47:35 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61230f6a
+2021-02-04 12:47:35 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-04 12:47:35 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 10:46:58 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-05 10:47:00 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c72da34
+2021-02-05 10:47:00 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@641147d0
+2021-02-05 10:47:00 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e38921c
+2021-02-05 10:47:00 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@64d7f7e0
+2021-02-05 10:47:01 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c419631
+2021-02-05 10:47:01 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@418e7838
+2021-02-05 10:47:01 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61230f6a
+2021-02-05 10:47:01 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c130745
+2021-02-05 10:47:01 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 10:47:01 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 10:48:20 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-05 10:48:20 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3fcdb0
+2021-02-05 10:48:20 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@64d7f7e0
+2021-02-05 10:48:20 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@27c6e487
+2021-02-05 10:48:20 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49070868
+2021-02-05 10:48:21 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61230f6a
+2021-02-05 10:48:21 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c130745
+2021-02-05 10:48:21 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@cd3fee8
+2021-02-05 10:48:21 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3e2e18f2
+2021-02-05 10:48:21 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 10:48:21 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 11:11:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-05 11:11:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@491cc5c9
+2021-02-05 11:11:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@462d5aee
+2021-02-05 11:11:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@69b0fd6f
+2021-02-05 11:11:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@757942a1
+2021-02-05 11:11:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2d9d4f9d
+2021-02-05 11:11:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4034c28c
+2021-02-05 11:11:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e50a6f6
+2021-02-05 11:11:13 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@14ec4505
+2021-02-05 11:11:14 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 11:11:14 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 11:12:02 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-05 11:12:02 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@491cc5c9
+2021-02-05 11:12:02 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@462d5aee
+2021-02-05 11:12:02 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@69b0fd6f
+2021-02-05 11:12:02 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@757942a1
+2021-02-05 11:12:03 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@2d9d4f9d
+2021-02-05 11:12:03 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4034c28c
+2021-02-05 11:12:03 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@e50a6f6
+2021-02-05 11:12:03 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@14ec4505
+2021-02-05 11:12:03 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 11:12:03 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 14:01:47 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-05 14:01:47 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1c72da34
+2021-02-05 14:01:47 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@641147d0
+2021-02-05 14:01:47 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6e38921c
+2021-02-05 14:01:47 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@64d7f7e0
+2021-02-05 14:01:48 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c419631
+2021-02-05 14:01:48 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@418e7838
+2021-02-05 14:01:48 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61230f6a
+2021-02-05 14:01:48 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c130745
+2021-02-05 14:01:48 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 14:01:48 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 14:02:00 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@ed9d034
+2021-02-05 14:02:00 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3d3fcdb0
+2021-02-05 14:02:00 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@64d7f7e0
+2021-02-05 14:02:00 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@27c6e487
+2021-02-05 14:02:00 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@49070868
+2021-02-05 14:02:02 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@61230f6a
+2021-02-05 14:02:02 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3c130745
+2021-02-05 14:02:02 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@cd3fee8
+2021-02-05 14:02:02 INFO main - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@3e2e18f2
+2021-02-05 14:02:02 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.TransactionalMessageService
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:474) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]
+2021-02-05 14:02:02 ERROR main - Error occured when looking for resource file META-INF/service/org.apache.rocketmq.broker.transaction.AbstractTransactionalMessageCheckListener
+java.lang.NullPointerException: null
+	at java.io.Reader.<init>(Reader.java:78) ~[na:1.8.0_251]
+	at java.io.InputStreamReader.<init>(InputStreamReader.java:97) ~[na:1.8.0_251]
+	at org.apache.rocketmq.broker.util.ServiceProvider.loadClass(ServiceProvider.java:131) ~[classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialTransaction(BrokerController.java:479) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerController.initialize(BrokerController.java:468) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.createBrokerController(BrokerStartup.java:218) [classes/:na]
+	at org.apache.rocketmq.broker.BrokerStartup.main(BrokerStartup.java:58) [classes/:na]

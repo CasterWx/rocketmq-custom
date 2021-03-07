@@ -1,0 +1,1615 @@
+2021-02-04 11:47:38 INFO main - rocketmqHome=E:\dev2\rocketmq-custom\debughome\rocketmq_home
+2021-02-04 11:47:38 INFO main - kvConfigPath=C:\Users\13252\namesrv\kvConfig.json
+2021-02-04 11:47:38 INFO main - configStorePath=C:\Users\13252\namesrv\namesrv.properties
+2021-02-04 11:47:38 INFO main - productEnvName=center
+2021-02-04 11:47:38 INFO main - clusterTest=false
+2021-02-04 11:47:38 INFO main - orderMessageEnable=false
+2021-02-04 11:47:38 INFO main - listenPort=9876
+2021-02-04 11:47:38 INFO main - serverWorkerThreads=8
+2021-02-04 11:47:38 INFO main - serverCallbackExecutorThreads=0
+2021-02-04 11:47:38 INFO main - serverSelectorThreads=3
+2021-02-04 11:47:38 INFO main - serverOnewaySemaphoreValue=256
+2021-02-04 11:47:38 INFO main - serverAsyncSemaphoreValue=64
+2021-02-04 11:47:38 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-02-04 11:47:38 INFO main - serverSocketSndBufSize=65535
+2021-02-04 11:47:38 INFO main - serverSocketRcvBufSize=65535
+2021-02-04 11:47:38 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-02-04 11:47:38 INFO main - useEpollNativeSelector=false
+2021-02-04 11:47:40 INFO main - Server is running in TLS permissive mode
+2021-02-04 11:47:40 INFO main - Tls config file doesn't exist, skip it
+2021-02-04 11:47:40 INFO main - Log the final used tls related configuration
+2021-02-04 11:47:40 INFO main - tls.test.mode.enable = true
+2021-02-04 11:47:40 INFO main - tls.server.need.client.auth = none
+2021-02-04 11:47:40 INFO main - tls.server.keyPath = null
+2021-02-04 11:47:40 INFO main - tls.server.keyPassword = null
+2021-02-04 11:47:40 INFO main - tls.server.certPath = null
+2021-02-04 11:47:40 INFO main - tls.server.authClient = false
+2021-02-04 11:47:40 INFO main - tls.server.trustCertPath = null
+2021-02-04 11:47:40 INFO main - tls.client.keyPath = null
+2021-02-04 11:47:40 INFO main - tls.client.keyPassword = null
+2021-02-04 11:47:40 INFO main - tls.client.certPath = null
+2021-02-04 11:47:40 INFO main - tls.client.authServer = false
+2021-02-04 11:47:40 INFO main - tls.client.trustCertPath = null
+2021-02-04 11:47:40 INFO main - Using OpenSSL provider
+2021-02-04 11:47:41 INFO main - SSLContext created for server
+2021-02-04 11:47:41 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-02-04 11:47:41 INFO FileWatchService - FileWatchService service started
+2021-02-04 11:47:41 INFO main - The Name Server boot success. serializeType=JSON
+2021-02-04 11:48:07 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15291
+2021-02-04 11:48:07 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15291]
+2021-02-04 11:48:08 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=0, flag(B)=0, remark=null, extFields={brokerId=0, bodyCrc32=1457671996, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":0,"timestamp":1612410484961},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:48:08 INFO RemotingExecutorThread_1 - new topic registered, AUTO_CREATE_TOPIC_KEY QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2021-02-04 11:48:08 INFO RemotingExecutorThread_1 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2021-02-04 11:48:08 INFO RemotingExecutorThread_1 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 11:48:08 INFO RemotingExecutorThread_1 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2021-02-04 11:48:08 INFO RemotingExecutorThread_1 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 11:48:08 INFO RemotingExecutorThread_1 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2021-02-04 11:48:08 INFO RemotingExecutorThread_1 - new broker registered, 10.155.7.52:10911 HAServer: 10.155.7.52:10912
+2021-02-04 11:48:23 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=2, flag(B)=0, remark=null, extFields={brokerId=0, bodyCrc32=1457671996, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":0,"timestamp":1612410484961},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:48:41 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-04 11:48:41 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-04 11:48:45 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15352
+2021-02-04 11:48:45 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15352]
+2021-02-04 11:48:50 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15352]
+2021-02-04 11:48:50 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15352]
+2021-02-04 11:48:53 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=4, flag(B)=0, remark=null, extFields={brokerId=0, bodyCrc32=1457671996, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":0,"timestamp":1612410484961},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:49:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15367
+2021-02-04 11:49:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15367]
+2021-02-04 11:49:05 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15367]
+2021-02-04 11:49:05 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15367]
+2021-02-04 11:49:08 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15392
+2021-02-04 11:49:08 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15392]
+2021-02-04 11:49:13 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=6, flag(B)=10, remark=null, extFields={brokerId=0, bodyCrc32=459280635, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":1,"timestamp":1612410553892},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"RMQ_SYS_TRANS_HALF_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"RMQ_SYS_TRANS_HALF_TOPIC","topicSysFlag":0,"writeQueueNums":1},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:49:13 INFO RemotingExecutorThread_4 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 11:49:20 WARN NettyServerCodecThread_4 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:15392
+2021-02-04 11:49:20 WARN NettyServerCodecThread_4 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:49:20 INFO NettyServerNIOSelector_3_1 - closeChannel: close the connection to remote address[127.0.0.1:15392] result: true
+2021-02-04 11:49:20 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15392]
+2021-02-04 11:49:20 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15392]
+2021-02-04 11:49:24 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=7, flag(B)=0, remark=null, extFields={brokerId=0, bodyCrc32=459280635, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":1,"timestamp":1612410553892},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"RMQ_SYS_TRANS_HALF_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"RMQ_SYS_TRANS_HALF_TOPIC","topicSysFlag":0,"writeQueueNums":1},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:49:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15413
+2021-02-04 11:49:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15413]
+2021-02-04 11:49:36 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15413]
+2021-02-04 11:49:36 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15413]
+2021-02-04 11:49:53 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=9, flag(B)=0, remark=null, extFields={brokerId=0, bodyCrc32=459280635, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":1,"timestamp":1612410553892},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"RMQ_SYS_TRANS_HALF_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"RMQ_SYS_TRANS_HALF_TOPIC","topicSysFlag":0,"writeQueueNums":1},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:50:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15454
+2021-02-04 11:50:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15454]
+2021-02-04 11:50:05 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15454]
+2021-02-04 11:50:05 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15454]
+2021-02-04 11:50:23 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=11, flag(B)=0, remark=null, extFields={brokerId=0, bodyCrc32=459280635, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":1,"timestamp":1612410553892},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"RMQ_SYS_TRANS_HALF_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"RMQ_SYS_TRANS_HALF_TOPIC","topicSysFlag":0,"writeQueueNums":1},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:50:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15499
+2021-02-04 11:50:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15499]
+2021-02-04 11:50:35 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15499]
+2021-02-04 11:50:35 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15499]
+2021-02-04 11:50:53 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=13, flag(B)=0, remark=null, extFields={brokerId=0, bodyCrc32=459280635, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":1,"timestamp":1612410553892},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"RMQ_SYS_TRANS_HALF_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"RMQ_SYS_TRANS_HALF_TOPIC","topicSysFlag":0,"writeQueueNums":1},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:51:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15538
+2021-02-04 11:51:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15538]
+2021-02-04 11:51:06 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15538]
+2021-02-04 11:51:06 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15538]
+2021-02-04 11:51:23 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=15, flag(B)=0, remark=null, extFields={brokerId=0, bodyCrc32=459280635, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":1,"timestamp":1612410553892},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"RMQ_SYS_TRANS_HALF_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"RMQ_SYS_TRANS_HALF_TOPIC","topicSysFlag":0,"writeQueueNums":1},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:51:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15577
+2021-02-04 11:51:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15577]
+2021-02-04 11:51:35 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15577]
+2021-02-04 11:51:35 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15577]
+2021-02-04 11:51:53 INFO NettyServerCodecThread_1 - #### NettyServerHandler, received message : RemotingCommand [code=103, type:REQUEST_COMMAND, language=JAVA, version=273, opaque=17, flag(B)=0, remark=null, extFields={brokerId=0, bodyCrc32=459280635, clusterName=DefaultCluster, brokerAddr=10.155.7.52:10911, haServerAddr=10.155.7.52:10912, compressed=false, brokerName=broker-a}, serializeTypeCurrentRPC=JSON, body={"filterServerList":[],"topicConfigSerializeWrapper":{"dataVersion":{"counter":1,"timestamp":1612410553892},"topicConfigTable":{"AUTO_CREATE_TOPIC_KEY":{"order":false,"perm":7,"readQueueNums":8,"topicFilterType":"SINGLE_TAG","topicName":"AUTO_CREATE_TOPIC_KEY","topicSysFlag":0,"writeQueueNums":8},"SELF_TEST_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"SELF_TEST_TOPIC","topicSysFlag":0,"writeQueueNums":1},"DefaultCluster":{"order":false,"perm":7,"readQueueNums":16,"topicFilterType":"SINGLE_TAG","topicName":"DefaultCluster","topicSysFlag":0,"writeQueueNums":16},"RMQ_SYS_TRANS_HALF_TOPIC":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"RMQ_SYS_TRANS_HALF_TOPIC","topicSysFlag":0,"writeQueueNums":1},"broker-a":{"order":false,"perm":7,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"broker-a","topicSysFlag":0,"writeQueueNums":1},"BenchmarkTest":{"order":false,"perm":6,"readQueueNums":1024,"topicFilterType":"SINGLE_TAG","topicName":"BenchmarkTest","topicSysFlag":0,"writeQueueNums":1024},"OFFSET_MOVED_EVENT":{"order":false,"perm":6,"readQueueNums":1,"topicFilterType":"SINGLE_TAG","topicName":"OFFSET_MOVED_EVENT","topicSysFlag":0,"writeQueueNums":1}}}}]
+2021-02-04 11:51:54 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15601
+2021-02-04 11:51:54 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15601]
+2021-02-04 11:51:58 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15601]
+2021-02-04 11:51:58 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15601]
+2021-02-04 11:52:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15620
+2021-02-04 11:52:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15620]
+2021-02-04 11:52:05 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15620]
+2021-02-04 11:52:05 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15620]
+2021-02-04 11:52:14 WARN NettyServerCodecThread_1 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:15291
+2021-02-04 11:52:14 WARN NettyServerCodecThread_1 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 11:52:14 INFO NettyEventExecutor - the broker's channel destroyed, 10.155.7.52:10911, clean it's data structure at once
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove brokerAddr[0, 10.155.7.52:10911] from brokerAddrTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[AUTO_CREATE_TOPIC_KEY QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[AUTO_CREATE_TOPIC_KEY] all queue, from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2021-02-04 11:52:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15291]
+2021-02-04 11:52:14 INFO NettyServerNIOSelector_3_1 - closeChannel: close the connection to remote address[127.0.0.1:15291] result: true
+2021-02-04 11:52:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15291]
+2021-02-04 11:52:28 INFO main - rocketmqHome=E:\dev2\rocketmq-custom\debughome\rocketmq_home
+2021-02-04 11:52:28 INFO main - kvConfigPath=C:\Users\13252\namesrv\kvConfig.json
+2021-02-04 11:52:28 INFO main - configStorePath=C:\Users\13252\namesrv\namesrv.properties
+2021-02-04 11:52:28 INFO main - productEnvName=center
+2021-02-04 11:52:28 INFO main - clusterTest=false
+2021-02-04 11:52:28 INFO main - orderMessageEnable=false
+2021-02-04 11:52:28 INFO main - listenPort=9876
+2021-02-04 11:52:28 INFO main - serverWorkerThreads=8
+2021-02-04 11:52:28 INFO main - serverCallbackExecutorThreads=0
+2021-02-04 11:52:28 INFO main - serverSelectorThreads=3
+2021-02-04 11:52:28 INFO main - serverOnewaySemaphoreValue=256
+2021-02-04 11:52:28 INFO main - serverAsyncSemaphoreValue=64
+2021-02-04 11:52:28 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-02-04 11:52:28 INFO main - serverSocketSndBufSize=65535
+2021-02-04 11:52:28 INFO main - serverSocketRcvBufSize=65535
+2021-02-04 11:52:28 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-02-04 11:52:28 INFO main - useEpollNativeSelector=false
+2021-02-04 11:52:29 INFO main - Server is running in TLS permissive mode
+2021-02-04 11:52:29 INFO main - Tls config file doesn't exist, skip it
+2021-02-04 11:52:29 INFO main - Log the final used tls related configuration
+2021-02-04 11:52:29 INFO main - tls.test.mode.enable = true
+2021-02-04 11:52:29 INFO main - tls.server.need.client.auth = none
+2021-02-04 11:52:29 INFO main - tls.server.keyPath = null
+2021-02-04 11:52:29 INFO main - tls.server.keyPassword = null
+2021-02-04 11:52:29 INFO main - tls.server.certPath = null
+2021-02-04 11:52:29 INFO main - tls.server.authClient = false
+2021-02-04 11:52:29 INFO main - tls.server.trustCertPath = null
+2021-02-04 11:52:29 INFO main - tls.client.keyPath = null
+2021-02-04 11:52:29 INFO main - tls.client.keyPassword = null
+2021-02-04 11:52:29 INFO main - tls.client.certPath = null
+2021-02-04 11:52:29 INFO main - tls.client.authServer = false
+2021-02-04 11:52:29 INFO main - tls.client.trustCertPath = null
+2021-02-04 11:52:30 INFO main - Using OpenSSL provider
+2021-02-04 11:52:30 INFO main - SSLContext created for server
+2021-02-04 11:52:31 INFO FileWatchService - FileWatchService service started
+2021-02-04 11:52:31 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-02-04 11:52:31 INFO main - The Name Server boot success. serializeType=JSON
+2021-02-04 11:52:31 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15673
+2021-02-04 11:52:31 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15673]
+2021-02-04 11:52:31 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15673]
+2021-02-04 11:52:31 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15673]
+2021-02-04 11:52:38 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15703
+2021-02-04 11:52:38 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15703]
+2021-02-04 11:52:38 INFO RemotingExecutorThread_3 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 11:52:38 INFO RemotingExecutorThread_3 - new topic registered, AUTO_CREATE_TOPIC_KEY QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2021-02-04 11:52:38 INFO RemotingExecutorThread_3 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2021-02-04 11:52:38 INFO RemotingExecutorThread_3 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 11:52:38 INFO RemotingExecutorThread_3 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2021-02-04 11:52:38 INFO RemotingExecutorThread_3 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 11:52:38 INFO RemotingExecutorThread_3 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2021-02-04 11:52:38 INFO RemotingExecutorThread_3 - new broker registered, 10.155.7.52:10911 HAServer: 10.155.7.52:10912
+2021-02-04 11:52:46 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15715
+2021-02-04 11:52:46 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15715]
+2021-02-04 11:52:46 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15715]
+2021-02-04 11:52:46 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15715]
+2021-02-04 11:52:46 INFO RemotingExecutorThread_5 - new topic registered, TopicTest QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2021-02-04 11:53:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15738
+2021-02-04 11:53:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15738]
+2021-02-04 11:53:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15738]
+2021-02-04 11:53:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15738]
+2021-02-04 11:53:02 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15746
+2021-02-04 11:53:02 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15746]
+2021-02-04 11:53:02 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15746]
+2021-02-04 11:53:02 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15746]
+2021-02-04 11:53:30 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-04 11:53:30 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-04 11:53:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15775
+2021-02-04 11:53:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15775]
+2021-02-04 11:53:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15775]
+2021-02-04 11:53:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15775]
+2021-02-04 11:54:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15815
+2021-02-04 11:54:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15815]
+2021-02-04 11:54:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15815]
+2021-02-04 11:54:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15815]
+2021-02-04 11:54:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15857
+2021-02-04 11:54:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15857]
+2021-02-04 11:54:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15857]
+2021-02-04 11:54:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15857]
+2021-02-04 11:55:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15896
+2021-02-04 11:55:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15896]
+2021-02-04 11:55:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15896]
+2021-02-04 11:55:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15896]
+2021-02-04 11:55:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15945
+2021-02-04 11:55:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15945]
+2021-02-04 11:55:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15945]
+2021-02-04 11:55:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15945]
+2021-02-04 11:56:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:15992
+2021-02-04 11:56:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:15992]
+2021-02-04 11:56:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:15992]
+2021-02-04 11:56:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:15992]
+2021-02-04 11:56:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16069
+2021-02-04 11:56:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16069]
+2021-02-04 11:56:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16069]
+2021-02-04 11:56:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16069]
+2021-02-04 11:57:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16116
+2021-02-04 11:57:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16116]
+2021-02-04 11:57:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16116]
+2021-02-04 11:57:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16116]
+2021-02-04 11:57:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16154
+2021-02-04 11:57:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16154]
+2021-02-04 11:57:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16154]
+2021-02-04 11:57:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16154]
+2021-02-04 11:58:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16194
+2021-02-04 11:58:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16194]
+2021-02-04 11:58:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16194]
+2021-02-04 11:58:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16194]
+2021-02-04 11:58:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16235
+2021-02-04 11:58:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16235]
+2021-02-04 11:58:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16235]
+2021-02-04 11:58:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16235]
+2021-02-04 11:59:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16274
+2021-02-04 11:59:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16274]
+2021-02-04 11:59:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16274]
+2021-02-04 11:59:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16274]
+2021-02-04 11:59:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16318
+2021-02-04 11:59:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16318]
+2021-02-04 11:59:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16318]
+2021-02-04 11:59:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16318]
+2021-02-04 12:00:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16360
+2021-02-04 12:00:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16360]
+2021-02-04 12:00:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16360]
+2021-02-04 12:00:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16360]
+2021-02-04 12:00:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16396
+2021-02-04 12:00:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16396]
+2021-02-04 12:00:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16396]
+2021-02-04 12:00:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16396]
+2021-02-04 12:01:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16428
+2021-02-04 12:01:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16428]
+2021-02-04 12:01:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16428]
+2021-02-04 12:01:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16428]
+2021-02-04 12:01:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16469
+2021-02-04 12:01:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16469]
+2021-02-04 12:01:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16469]
+2021-02-04 12:01:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16469]
+2021-02-04 12:02:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16508
+2021-02-04 12:02:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16508]
+2021-02-04 12:02:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16508]
+2021-02-04 12:02:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16508]
+2021-02-04 12:02:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16552
+2021-02-04 12:02:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16552]
+2021-02-04 12:02:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16552]
+2021-02-04 12:02:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16552]
+2021-02-04 12:03:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16594
+2021-02-04 12:03:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16594]
+2021-02-04 12:03:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16594]
+2021-02-04 12:03:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16594]
+2021-02-04 12:03:30 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-04 12:03:30 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-04 12:03:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16638
+2021-02-04 12:03:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16638]
+2021-02-04 12:03:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16638]
+2021-02-04 12:03:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16638]
+2021-02-04 12:04:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16686
+2021-02-04 12:04:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16686]
+2021-02-04 12:04:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16686]
+2021-02-04 12:04:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16686]
+2021-02-04 12:04:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16723
+2021-02-04 12:04:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16723]
+2021-02-04 12:04:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16723]
+2021-02-04 12:04:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16723]
+2021-02-04 12:05:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16755
+2021-02-04 12:05:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16755]
+2021-02-04 12:05:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16755]
+2021-02-04 12:05:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16755]
+2021-02-04 12:05:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16797
+2021-02-04 12:05:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16797]
+2021-02-04 12:05:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16797]
+2021-02-04 12:05:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16797]
+2021-02-04 12:06:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16839
+2021-02-04 12:06:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16839]
+2021-02-04 12:06:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16839]
+2021-02-04 12:06:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16839]
+2021-02-04 12:06:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16881
+2021-02-04 12:06:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16881]
+2021-02-04 12:06:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16881]
+2021-02-04 12:06:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16881]
+2021-02-04 12:07:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16929
+2021-02-04 12:07:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16929]
+2021-02-04 12:07:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16929]
+2021-02-04 12:07:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16929]
+2021-02-04 12:07:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:16972
+2021-02-04 12:07:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:16972]
+2021-02-04 12:07:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:16972]
+2021-02-04 12:07:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:16972]
+2021-02-04 12:08:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17014
+2021-02-04 12:08:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17014]
+2021-02-04 12:08:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17014]
+2021-02-04 12:08:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17014]
+2021-02-04 12:08:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17051
+2021-02-04 12:08:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17051]
+2021-02-04 12:08:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17051]
+2021-02-04 12:08:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17051]
+2021-02-04 12:09:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17082
+2021-02-04 12:09:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17082]
+2021-02-04 12:09:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17082]
+2021-02-04 12:09:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17082]
+2021-02-04 12:09:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17121
+2021-02-04 12:09:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17121]
+2021-02-04 12:09:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17121]
+2021-02-04 12:09:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17121]
+2021-02-04 12:10:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17170
+2021-02-04 12:10:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17170]
+2021-02-04 12:10:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17170]
+2021-02-04 12:10:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17170]
+2021-02-04 12:10:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17217
+2021-02-04 12:10:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17217]
+2021-02-04 12:10:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17217]
+2021-02-04 12:10:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17217]
+2021-02-04 12:11:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17258
+2021-02-04 12:11:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17258]
+2021-02-04 12:11:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17258]
+2021-02-04 12:11:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17258]
+2021-02-04 12:11:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17301
+2021-02-04 12:11:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17301]
+2021-02-04 12:11:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17301]
+2021-02-04 12:11:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17301]
+2021-02-04 12:12:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17344
+2021-02-04 12:12:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17344]
+2021-02-04 12:12:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17344]
+2021-02-04 12:12:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17344]
+2021-02-04 12:12:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17381
+2021-02-04 12:12:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17381]
+2021-02-04 12:12:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17381]
+2021-02-04 12:12:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17381]
+2021-02-04 12:13:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17413
+2021-02-04 12:13:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17413]
+2021-02-04 12:13:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17413]
+2021-02-04 12:13:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17413]
+2021-02-04 12:13:30 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-04 12:13:30 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-04 12:13:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17454
+2021-02-04 12:13:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17454]
+2021-02-04 12:13:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17454]
+2021-02-04 12:13:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17454]
+2021-02-04 12:14:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17495
+2021-02-04 12:14:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17495]
+2021-02-04 12:14:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17495]
+2021-02-04 12:14:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17495]
+2021-02-04 12:14:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17538
+2021-02-04 12:14:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17538]
+2021-02-04 12:14:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17538]
+2021-02-04 12:14:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17538]
+2021-02-04 12:15:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17578
+2021-02-04 12:15:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17578]
+2021-02-04 12:15:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17578]
+2021-02-04 12:15:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17578]
+2021-02-04 12:15:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17620
+2021-02-04 12:15:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17620]
+2021-02-04 12:15:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17620]
+2021-02-04 12:15:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17620]
+2021-02-04 12:16:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17659
+2021-02-04 12:16:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17659]
+2021-02-04 12:16:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17659]
+2021-02-04 12:16:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17659]
+2021-02-04 12:16:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17697
+2021-02-04 12:16:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17697]
+2021-02-04 12:16:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17697]
+2021-02-04 12:16:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17697]
+2021-02-04 12:17:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17730
+2021-02-04 12:17:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17730]
+2021-02-04 12:17:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17730]
+2021-02-04 12:17:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17730]
+2021-02-04 12:17:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17769
+2021-02-04 12:17:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17769]
+2021-02-04 12:17:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17769]
+2021-02-04 12:17:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17769]
+2021-02-04 12:18:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17810
+2021-02-04 12:18:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17810]
+2021-02-04 12:18:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17810]
+2021-02-04 12:18:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17810]
+2021-02-04 12:18:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17854
+2021-02-04 12:18:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17854]
+2021-02-04 12:18:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17854]
+2021-02-04 12:18:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17854]
+2021-02-04 12:19:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17893
+2021-02-04 12:19:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17893]
+2021-02-04 12:19:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17893]
+2021-02-04 12:19:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17893]
+2021-02-04 12:19:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17939
+2021-02-04 12:19:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17939]
+2021-02-04 12:19:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17939]
+2021-02-04 12:19:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17939]
+2021-02-04 12:20:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:17980
+2021-02-04 12:20:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:17980]
+2021-02-04 12:20:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:17980]
+2021-02-04 12:20:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:17980]
+2021-02-04 12:20:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18025
+2021-02-04 12:20:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18025]
+2021-02-04 12:20:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18025]
+2021-02-04 12:20:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18025]
+2021-02-04 12:21:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18057
+2021-02-04 12:21:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18057]
+2021-02-04 12:21:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18057]
+2021-02-04 12:21:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18057]
+2021-02-04 12:21:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18095
+2021-02-04 12:21:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18095]
+2021-02-04 12:21:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18095]
+2021-02-04 12:21:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18095]
+2021-02-04 12:22:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18135
+2021-02-04 12:22:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18135]
+2021-02-04 12:22:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18135]
+2021-02-04 12:22:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18135]
+2021-02-04 12:22:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18176
+2021-02-04 12:22:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18176]
+2021-02-04 12:22:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18176]
+2021-02-04 12:22:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18176]
+2021-02-04 12:23:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18215
+2021-02-04 12:23:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18215]
+2021-02-04 12:23:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18215]
+2021-02-04 12:23:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18215]
+2021-02-04 12:23:30 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-04 12:23:30 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-04 12:23:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18259
+2021-02-04 12:23:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18259]
+2021-02-04 12:23:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18259]
+2021-02-04 12:23:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18259]
+2021-02-04 12:24:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18298
+2021-02-04 12:24:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18298]
+2021-02-04 12:24:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18298]
+2021-02-04 12:24:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18298]
+2021-02-04 12:24:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18302
+2021-02-04 12:24:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18302]
+2021-02-04 12:24:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18302]
+2021-02-04 12:24:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18302]
+2021-02-04 12:24:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18336
+2021-02-04 12:24:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18336]
+2021-02-04 12:24:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18336]
+2021-02-04 12:24:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18336]
+2021-02-04 12:25:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18370
+2021-02-04 12:25:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18370]
+2021-02-04 12:25:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18370]
+2021-02-04 12:25:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18370]
+2021-02-04 12:25:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18409
+2021-02-04 12:25:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18409]
+2021-02-04 12:25:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18409]
+2021-02-04 12:25:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18409]
+2021-02-04 12:26:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18453
+2021-02-04 12:26:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18453]
+2021-02-04 12:26:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18453]
+2021-02-04 12:26:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18453]
+2021-02-04 12:26:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18497
+2021-02-04 12:26:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18497]
+2021-02-04 12:26:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18497]
+2021-02-04 12:26:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18497]
+2021-02-04 12:27:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18541
+2021-02-04 12:27:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18541]
+2021-02-04 12:27:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18541]
+2021-02-04 12:27:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18541]
+2021-02-04 12:27:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18585
+2021-02-04 12:27:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18585]
+2021-02-04 12:27:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18585]
+2021-02-04 12:27:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18585]
+2021-02-04 12:28:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18626
+2021-02-04 12:28:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18626]
+2021-02-04 12:28:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18626]
+2021-02-04 12:28:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18626]
+2021-02-04 12:28:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18665
+2021-02-04 12:28:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18665]
+2021-02-04 12:28:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18665]
+2021-02-04 12:28:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18665]
+2021-02-04 12:29:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18694
+2021-02-04 12:29:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18694]
+2021-02-04 12:29:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18694]
+2021-02-04 12:29:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18694]
+2021-02-04 12:29:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18732
+2021-02-04 12:29:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18732]
+2021-02-04 12:29:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18732]
+2021-02-04 12:29:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18732]
+2021-02-04 12:30:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18772
+2021-02-04 12:30:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18772]
+2021-02-04 12:30:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18772]
+2021-02-04 12:30:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18772]
+2021-02-04 12:30:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18813
+2021-02-04 12:30:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18813]
+2021-02-04 12:30:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18813]
+2021-02-04 12:30:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18813]
+2021-02-04 12:31:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18854
+2021-02-04 12:31:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18854]
+2021-02-04 12:31:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18854]
+2021-02-04 12:31:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18854]
+2021-02-04 12:31:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18896
+2021-02-04 12:31:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18896]
+2021-02-04 12:31:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18896]
+2021-02-04 12:31:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18896]
+2021-02-04 12:32:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18936
+2021-02-04 12:32:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18936]
+2021-02-04 12:32:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18936]
+2021-02-04 12:32:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18936]
+2021-02-04 12:32:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:18972
+2021-02-04 12:32:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:18972]
+2021-02-04 12:32:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:18972]
+2021-02-04 12:32:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:18972]
+2021-02-04 12:33:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19003
+2021-02-04 12:33:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19003]
+2021-02-04 12:33:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19003]
+2021-02-04 12:33:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19003]
+2021-02-04 12:33:30 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-04 12:33:30 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-04 12:33:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19043
+2021-02-04 12:33:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19043]
+2021-02-04 12:33:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19043]
+2021-02-04 12:33:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19043]
+2021-02-04 12:34:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19082
+2021-02-04 12:34:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19082]
+2021-02-04 12:34:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19082]
+2021-02-04 12:34:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19082]
+2021-02-04 12:34:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19121
+2021-02-04 12:34:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19121]
+2021-02-04 12:34:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19121]
+2021-02-04 12:34:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19121]
+2021-02-04 12:35:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19162
+2021-02-04 12:35:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19162]
+2021-02-04 12:35:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19162]
+2021-02-04 12:35:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19162]
+2021-02-04 12:35:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19209
+2021-02-04 12:35:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19209]
+2021-02-04 12:35:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19209]
+2021-02-04 12:35:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19209]
+2021-02-04 12:36:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19249
+2021-02-04 12:36:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19249]
+2021-02-04 12:36:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19249]
+2021-02-04 12:36:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19249]
+2021-02-04 12:36:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19292
+2021-02-04 12:36:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19292]
+2021-02-04 12:36:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19292]
+2021-02-04 12:36:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19292]
+2021-02-04 12:36:43 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19324
+2021-02-04 12:36:43 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19324]
+2021-02-04 12:36:43 INFO RemotingExecutorThread_6 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-04 12:37:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19358
+2021-02-04 12:37:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19358]
+2021-02-04 12:37:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19358]
+2021-02-04 12:37:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19358]
+2021-02-04 12:37:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19367
+2021-02-04 12:37:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19367]
+2021-02-04 12:37:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19367]
+2021-02-04 12:37:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19367]
+2021-02-04 12:37:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19403
+2021-02-04 12:37:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19403]
+2021-02-04 12:37:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19403]
+2021-02-04 12:37:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19403]
+2021-02-04 12:38:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19450
+2021-02-04 12:38:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19450]
+2021-02-04 12:38:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19450]
+2021-02-04 12:38:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19450]
+2021-02-04 12:38:03 WARN NettyServerCodecThread_6 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:19324
+2021-02-04 12:38:03 WARN NettyServerCodecThread_6 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 12:38:03 INFO NettyEventExecutor - the broker's channel destroyed, 10.155.7.52:10800, clean it's data structure at once
+2021-02-04 12:38:03 INFO NettyEventExecutor - remove brokerAddr[1, 10.155.7.52:10800] from brokerAddrTable, because channel destroyed
+2021-02-04 12:38:03 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19324]
+2021-02-04 12:38:03 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19324]
+2021-02-04 12:38:03 INFO NettyServerNIOSelector_3_1 - closeChannel: close the connection to remote address[127.0.0.1:19324] result: true
+2021-02-04 12:38:14 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19515
+2021-02-04 12:38:14 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19515]
+2021-02-04 12:38:14 INFO RemotingExecutorThread_2 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-04 12:38:27 WARN NettyServerCodecThread_3 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:19515
+2021-02-04 12:38:27 WARN NettyServerCodecThread_3 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 12:38:27 INFO NettyEventExecutor - the broker's channel destroyed, 10.155.7.52:10800, clean it's data structure at once
+2021-02-04 12:38:27 INFO NettyEventExecutor - remove brokerAddr[1, 10.155.7.52:10800] from brokerAddrTable, because channel destroyed
+2021-02-04 12:38:27 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19515]
+2021-02-04 12:38:27 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19515]
+2021-02-04 12:38:27 INFO NettyServerNIOSelector_3_3 - closeChannel: close the connection to remote address[127.0.0.1:19515] result: true
+2021-02-04 12:38:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19544
+2021-02-04 12:38:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19544]
+2021-02-04 12:38:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19544]
+2021-02-04 12:38:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19544]
+2021-02-04 12:38:42 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19589
+2021-02-04 12:38:42 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19589]
+2021-02-04 12:38:42 INFO RemotingExecutorThread_8 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-04 12:39:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19614
+2021-02-04 12:39:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19614]
+2021-02-04 12:39:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19614]
+2021-02-04 12:39:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19614]
+2021-02-04 12:39:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19618
+2021-02-04 12:39:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19618]
+2021-02-04 12:39:06 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19618]
+2021-02-04 12:39:06 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19618]
+2021-02-04 12:39:08 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19625
+2021-02-04 12:39:08 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19625]
+2021-02-04 12:39:13 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19625]
+2021-02-04 12:39:13 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19625]
+2021-02-04 12:39:16 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19643
+2021-02-04 12:39:16 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19643]
+2021-02-04 12:39:21 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19643]
+2021-02-04 12:39:21 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19643]
+2021-02-04 12:39:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19664
+2021-02-04 12:39:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19664]
+2021-02-04 12:39:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19664]
+2021-02-04 12:39:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19664]
+2021-02-04 12:39:48 WARN NettyServerCodecThread_5 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:19589
+2021-02-04 12:39:48 WARN NettyServerCodecThread_5 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 12:39:48 INFO NettyEventExecutor - the broker's channel destroyed, 10.155.7.52:10800, clean it's data structure at once
+2021-02-04 12:39:48 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19589]
+2021-02-04 12:39:48 INFO NettyEventExecutor - remove brokerAddr[1, 10.155.7.52:10800] from brokerAddrTable, because channel destroyed
+2021-02-04 12:39:48 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19589]
+2021-02-04 12:39:48 INFO NettyServerNIOSelector_3_2 - closeChannel: close the connection to remote address[127.0.0.1:19589] result: true
+2021-02-04 12:39:55 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19721
+2021-02-04 12:39:55 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19721]
+2021-02-04 12:39:55 INFO RemotingExecutorThread_1 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-04 12:40:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19746
+2021-02-04 12:40:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19746]
+2021-02-04 12:40:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19746]
+2021-02-04 12:40:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19746]
+2021-02-04 12:40:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19750
+2021-02-04 12:40:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19750]
+2021-02-04 12:40:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19750]
+2021-02-04 12:40:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19750]
+2021-02-04 12:40:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19788
+2021-02-04 12:40:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19788]
+2021-02-04 12:40:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19788]
+2021-02-04 12:40:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19788]
+2021-02-04 12:40:57 INFO main - rocketmqHome=E:\dev2\rocketmq-custom\debughome\rocketmq_home
+2021-02-04 12:40:57 INFO main - kvConfigPath=C:\Users\13252\namesrv\kvConfig.json
+2021-02-04 12:40:57 INFO main - configStorePath=C:\Users\13252\namesrv\namesrv.properties
+2021-02-04 12:40:57 INFO main - productEnvName=center
+2021-02-04 12:40:57 INFO main - clusterTest=false
+2021-02-04 12:40:57 INFO main - orderMessageEnable=false
+2021-02-04 12:40:57 INFO main - listenPort=9876
+2021-02-04 12:40:57 INFO main - serverWorkerThreads=8
+2021-02-04 12:40:57 INFO main - serverCallbackExecutorThreads=0
+2021-02-04 12:40:57 INFO main - serverSelectorThreads=3
+2021-02-04 12:40:57 INFO main - serverOnewaySemaphoreValue=256
+2021-02-04 12:40:57 INFO main - serverAsyncSemaphoreValue=64
+2021-02-04 12:40:57 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-02-04 12:40:57 INFO main - serverSocketSndBufSize=65535
+2021-02-04 12:40:57 INFO main - serverSocketRcvBufSize=65535
+2021-02-04 12:40:57 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-02-04 12:40:57 INFO main - useEpollNativeSelector=false
+2021-02-04 12:40:58 INFO main - Server is running in TLS permissive mode
+2021-02-04 12:40:58 INFO main - Tls config file doesn't exist, skip it
+2021-02-04 12:40:58 INFO main - Log the final used tls related configuration
+2021-02-04 12:40:58 INFO main - tls.test.mode.enable = true
+2021-02-04 12:40:58 INFO main - tls.server.need.client.auth = none
+2021-02-04 12:40:58 INFO main - tls.server.keyPath = null
+2021-02-04 12:40:58 INFO main - tls.server.keyPassword = null
+2021-02-04 12:40:58 INFO main - tls.server.certPath = null
+2021-02-04 12:40:58 INFO main - tls.server.authClient = false
+2021-02-04 12:40:58 INFO main - tls.server.trustCertPath = null
+2021-02-04 12:40:58 INFO main - tls.client.keyPath = null
+2021-02-04 12:40:58 INFO main - tls.client.keyPassword = null
+2021-02-04 12:40:58 INFO main - tls.client.certPath = null
+2021-02-04 12:40:58 INFO main - tls.client.authServer = false
+2021-02-04 12:40:58 INFO main - tls.client.trustCertPath = null
+2021-02-04 12:40:59 INFO main - Using OpenSSL provider
+2021-02-04 12:40:59 INFO main - SSLContext created for server
+2021-02-04 12:41:00 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-02-04 12:41:00 INFO FileWatchService - FileWatchService service started
+2021-02-04 12:41:00 INFO main - The Name Server boot success. serializeType=JSON
+2021-02-04 12:41:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19881
+2021-02-04 12:41:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19881]
+2021-02-04 12:41:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19881]
+2021-02-04 12:41:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19881]
+2021-02-04 12:41:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19911
+2021-02-04 12:41:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19911]
+2021-02-04 12:41:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:19911]
+2021-02-04 12:41:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:19911]
+2021-02-04 12:41:43 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19963
+2021-02-04 12:41:43 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19963]
+2021-02-04 12:41:43 INFO RemotingExecutorThread_5 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 12:41:43 INFO RemotingExecutorThread_5 - new topic registered, AUTO_CREATE_TOPIC_KEY QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2021-02-04 12:41:43 INFO RemotingExecutorThread_5 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2021-02-04 12:41:43 INFO RemotingExecutorThread_5 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 12:41:43 INFO RemotingExecutorThread_5 - new topic registered, TopicTest QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2021-02-04 12:41:43 INFO RemotingExecutorThread_5 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2021-02-04 12:41:43 INFO RemotingExecutorThread_5 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 12:41:43 INFO RemotingExecutorThread_5 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2021-02-04 12:41:43 INFO RemotingExecutorThread_5 - new broker registered, 10.155.7.52:10911 HAServer: 10.155.7.52:10912
+2021-02-04 12:41:45 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:19987
+2021-02-04 12:41:45 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:19987]
+2021-02-04 12:41:45 INFO RemotingExecutorThread_6 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-04 12:41:59 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-04 12:41:59 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-04 12:42:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20015
+2021-02-04 12:42:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20015]
+2021-02-04 12:42:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20015]
+2021-02-04 12:42:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20015]
+2021-02-04 12:42:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20019
+2021-02-04 12:42:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20019]
+2021-02-04 12:42:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20019]
+2021-02-04 12:42:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20019]
+2021-02-04 12:42:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20061
+2021-02-04 12:42:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20061]
+2021-02-04 12:42:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20061]
+2021-02-04 12:42:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20061]
+2021-02-04 12:43:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20100
+2021-02-04 12:43:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20100]
+2021-02-04 12:43:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20100]
+2021-02-04 12:43:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20100]
+2021-02-04 12:43:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20145
+2021-02-04 12:43:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20145]
+2021-02-04 12:43:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20145]
+2021-02-04 12:43:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20145]
+2021-02-04 12:44:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20184
+2021-02-04 12:44:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20184]
+2021-02-04 12:44:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20184]
+2021-02-04 12:44:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20184]
+2021-02-04 12:44:31 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20224
+2021-02-04 12:44:31 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20224]
+2021-02-04 12:44:31 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20224]
+2021-02-04 12:44:31 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20224]
+2021-02-04 12:45:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20258
+2021-02-04 12:45:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20258]
+2021-02-04 12:45:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20258]
+2021-02-04 12:45:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20258]
+2021-02-04 12:45:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20301
+2021-02-04 12:45:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20301]
+2021-02-04 12:45:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20301]
+2021-02-04 12:45:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20301]
+2021-02-04 12:46:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20343
+2021-02-04 12:46:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20343]
+2021-02-04 12:46:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20343]
+2021-02-04 12:46:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20343]
+2021-02-04 12:46:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20386
+2021-02-04 12:46:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20386]
+2021-02-04 12:46:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20386]
+2021-02-04 12:46:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20386]
+2021-02-04 12:46:56 INFO main - rocketmqHome=E:\dev2\rocketmq-custom\debughome\rocketmq_home
+2021-02-04 12:46:56 INFO main - kvConfigPath=C:\Users\13252\namesrv\kvConfig.json
+2021-02-04 12:46:56 INFO main - configStorePath=C:\Users\13252\namesrv\namesrv.properties
+2021-02-04 12:46:56 INFO main - productEnvName=center
+2021-02-04 12:46:56 INFO main - clusterTest=false
+2021-02-04 12:46:56 INFO main - orderMessageEnable=false
+2021-02-04 12:46:56 INFO main - listenPort=9876
+2021-02-04 12:46:56 INFO main - serverWorkerThreads=8
+2021-02-04 12:46:56 INFO main - serverCallbackExecutorThreads=0
+2021-02-04 12:46:56 INFO main - serverSelectorThreads=3
+2021-02-04 12:46:56 INFO main - serverOnewaySemaphoreValue=256
+2021-02-04 12:46:56 INFO main - serverAsyncSemaphoreValue=64
+2021-02-04 12:46:56 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-02-04 12:46:56 INFO main - serverSocketSndBufSize=65535
+2021-02-04 12:46:56 INFO main - serverSocketRcvBufSize=65535
+2021-02-04 12:46:56 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-02-04 12:46:56 INFO main - useEpollNativeSelector=false
+2021-02-04 12:46:57 INFO main - Server is running in TLS permissive mode
+2021-02-04 12:46:57 INFO main - Tls config file doesn't exist, skip it
+2021-02-04 12:46:57 INFO main - Log the final used tls related configuration
+2021-02-04 12:46:57 INFO main - tls.test.mode.enable = true
+2021-02-04 12:46:57 INFO main - tls.server.need.client.auth = none
+2021-02-04 12:46:57 INFO main - tls.server.keyPath = null
+2021-02-04 12:46:57 INFO main - tls.server.keyPassword = null
+2021-02-04 12:46:57 INFO main - tls.server.certPath = null
+2021-02-04 12:46:57 INFO main - tls.server.authClient = false
+2021-02-04 12:46:57 INFO main - tls.server.trustCertPath = null
+2021-02-04 12:46:57 INFO main - tls.client.keyPath = null
+2021-02-04 12:46:57 INFO main - tls.client.keyPassword = null
+2021-02-04 12:46:57 INFO main - tls.client.certPath = null
+2021-02-04 12:46:57 INFO main - tls.client.authServer = false
+2021-02-04 12:46:57 INFO main - tls.client.trustCertPath = null
+2021-02-04 12:46:57 INFO main - Using OpenSSL provider
+2021-02-04 12:46:58 INFO main - SSLContext created for server
+2021-02-04 12:46:58 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-02-04 12:46:58 INFO FileWatchService - FileWatchService service started
+2021-02-04 12:46:58 INFO main - The Name Server boot success. serializeType=JSON
+2021-02-04 12:47:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20444
+2021-02-04 12:47:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20444]
+2021-02-04 12:47:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20444]
+2021-02-04 12:47:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20444]
+2021-02-04 12:47:25 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20474
+2021-02-04 12:47:25 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20474]
+2021-02-04 12:47:25 INFO RemotingExecutorThread_3 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-04 12:47:29 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20517
+2021-02-04 12:47:29 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20517]
+2021-02-04 12:47:29 INFO RemotingExecutorThread_4 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 12:47:29 INFO RemotingExecutorThread_4 - new topic registered, AUTO_CREATE_TOPIC_KEY QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2021-02-04 12:47:29 INFO RemotingExecutorThread_4 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2021-02-04 12:47:29 INFO RemotingExecutorThread_4 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 12:47:29 INFO RemotingExecutorThread_4 - new topic registered, TopicTest QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2021-02-04 12:47:29 INFO RemotingExecutorThread_4 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2021-02-04 12:47:29 INFO RemotingExecutorThread_4 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-04 12:47:29 INFO RemotingExecutorThread_4 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2021-02-04 12:47:29 INFO RemotingExecutorThread_4 - new broker registered, 10.155.7.52:10911 HAServer: 10.155.7.52:10912
+2021-02-04 12:47:29 WARN NettyServerCodecThread_2 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:20474
+2021-02-04 12:47:29 WARN NettyServerCodecThread_2 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 12:47:29 INFO NettyEventExecutor - the broker's channel destroyed, 10.155.7.52:10800, clean it's data structure at once
+2021-02-04 12:47:29 INFO NettyEventExecutor - remove brokerAddr[1, 10.155.7.52:10800] from brokerAddrTable, because channel destroyed
+2021-02-04 12:47:29 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20474]
+2021-02-04 12:47:29 INFO NettyServerNIOSelector_3_2 - closeChannel: close the connection to remote address[127.0.0.1:20474] result: true
+2021-02-04 12:47:29 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20474]
+2021-02-04 12:47:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20522
+2021-02-04 12:47:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20522]
+2021-02-04 12:47:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20522]
+2021-02-04 12:47:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20522]
+2021-02-04 12:47:36 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20550
+2021-02-04 12:47:36 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20550]
+2021-02-04 12:47:36 INFO RemotingExecutorThread_6 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-04 12:47:58 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-04 12:47:58 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-04 12:48:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20594
+2021-02-04 12:48:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20594]
+2021-02-04 12:48:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20594]
+2021-02-04 12:48:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20594]
+2021-02-04 12:48:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20598
+2021-02-04 12:48:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20598]
+2021-02-04 12:48:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20598]
+2021-02-04 12:48:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20598]
+2021-02-04 12:48:02 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20602
+2021-02-04 12:48:02 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20602]
+2021-02-04 12:48:02 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20602]
+2021-02-04 12:48:02 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20602]
+2021-02-04 12:48:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20638
+2021-02-04 12:48:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20638]
+2021-02-04 12:48:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20638]
+2021-02-04 12:48:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20638]
+2021-02-04 12:49:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20667
+2021-02-04 12:49:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20667]
+2021-02-04 12:49:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20667]
+2021-02-04 12:49:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20667]
+2021-02-04 12:49:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20709
+2021-02-04 12:49:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20709]
+2021-02-04 12:49:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20709]
+2021-02-04 12:49:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20709]
+2021-02-04 12:50:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20751
+2021-02-04 12:50:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20751]
+2021-02-04 12:50:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20751]
+2021-02-04 12:50:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20751]
+2021-02-04 12:50:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20804
+2021-02-04 12:50:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20804]
+2021-02-04 12:50:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20804]
+2021-02-04 12:50:30 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20804]
+2021-02-04 12:51:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20844
+2021-02-04 12:51:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20844]
+2021-02-04 12:51:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20844]
+2021-02-04 12:51:00 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20844]
+2021-02-04 12:51:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20889
+2021-02-04 12:51:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20889]
+2021-02-04 12:51:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20889]
+2021-02-04 12:51:30 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20889]
+2021-02-04 12:52:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20928
+2021-02-04 12:52:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20928]
+2021-02-04 12:52:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20928]
+2021-02-04 12:52:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20928]
+2021-02-04 12:52:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:20985
+2021-02-04 12:52:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:20985]
+2021-02-04 12:52:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20985]
+2021-02-04 12:52:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20985]
+2021-02-04 12:53:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21019
+2021-02-04 12:53:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21019]
+2021-02-04 12:53:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21019]
+2021-02-04 12:53:00 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21019]
+2021-02-04 12:53:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21062
+2021-02-04 12:53:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21062]
+2021-02-04 12:53:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21062]
+2021-02-04 12:53:30 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21062]
+2021-02-04 12:54:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21099
+2021-02-04 12:54:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21099]
+2021-02-04 12:54:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21099]
+2021-02-04 12:54:00 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21099]
+2021-02-04 12:54:16 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21129
+2021-02-04 12:54:16 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21129]
+2021-02-04 12:54:17 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21129]
+2021-02-04 12:54:17 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21129]
+2021-02-04 12:54:31 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21152
+2021-02-04 12:54:31 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21152]
+2021-02-04 12:54:31 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21152]
+2021-02-04 12:54:31 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21152]
+2021-02-04 12:55:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21193
+2021-02-04 12:55:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21193]
+2021-02-04 12:55:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21193]
+2021-02-04 12:55:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21193]
+2021-02-04 12:55:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21239
+2021-02-04 12:55:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21239]
+2021-02-04 12:55:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21239]
+2021-02-04 12:55:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21239]
+2021-02-04 12:56:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21279
+2021-02-04 12:56:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21279]
+2021-02-04 12:56:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21279]
+2021-02-04 12:56:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21279]
+2021-02-04 12:56:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21321
+2021-02-04 12:56:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21321]
+2021-02-04 12:56:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21321]
+2021-02-04 12:56:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21321]
+2021-02-04 12:57:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21356
+2021-02-04 12:57:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21356]
+2021-02-04 12:57:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21356]
+2021-02-04 12:57:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21356]
+2021-02-04 12:57:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21400
+2021-02-04 12:57:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21400]
+2021-02-04 12:57:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21400]
+2021-02-04 12:57:30 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21400]
+2021-02-04 12:57:58 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-04 12:57:58 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-04 12:58:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21439
+2021-02-04 12:58:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21439]
+2021-02-04 12:58:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:21439]
+2021-02-04 12:58:00 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:21439]
+2021-02-04 12:58:01 WARN NettyServerCodecThread_3 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:20517
+2021-02-04 12:58:01 WARN NettyServerCodecThread_3 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-04 12:58:01 INFO NettyEventExecutor - the broker's channel destroyed, 10.155.7.52:10911, clean it's data structure at once
+2021-02-04 12:58:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:20517]
+2021-02-04 12:58:01 INFO NettyEventExecutor - remove brokerAddr[0, 10.155.7.52:10911] from brokerAddrTable, because channel destroyed
+2021-02-04 12:58:01 INFO NettyServerNIOSelector_3_3 - closeChannel: close the connection to remote address[127.0.0.1:20517] result: true
+2021-02-04 12:58:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:20517]
+2021-02-04 12:58:02 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:21448
+2021-02-04 12:58:02 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:21448]
+2021-02-05 10:46:52 INFO main - rocketmqHome=E:\dev2\rocketmq-custom\debughome\rocketmq_home
+2021-02-05 10:46:52 INFO main - kvConfigPath=C:\Users\13252\namesrv\kvConfig.json
+2021-02-05 10:46:52 INFO main - configStorePath=C:\Users\13252\namesrv\namesrv.properties
+2021-02-05 10:46:52 INFO main - productEnvName=center
+2021-02-05 10:46:52 INFO main - clusterTest=false
+2021-02-05 10:46:52 INFO main - orderMessageEnable=false
+2021-02-05 10:46:52 INFO main - listenPort=9876
+2021-02-05 10:46:52 INFO main - serverWorkerThreads=8
+2021-02-05 10:46:52 INFO main - serverCallbackExecutorThreads=0
+2021-02-05 10:46:52 INFO main - serverSelectorThreads=3
+2021-02-05 10:46:52 INFO main - serverOnewaySemaphoreValue=256
+2021-02-05 10:46:52 INFO main - serverAsyncSemaphoreValue=64
+2021-02-05 10:46:52 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-02-05 10:46:52 INFO main - serverSocketSndBufSize=65535
+2021-02-05 10:46:52 INFO main - serverSocketRcvBufSize=65535
+2021-02-05 10:46:52 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-02-05 10:46:52 INFO main - useEpollNativeSelector=false
+2021-02-05 10:46:53 INFO main - Server is running in TLS permissive mode
+2021-02-05 10:46:53 INFO main - Tls config file doesn't exist, skip it
+2021-02-05 10:46:53 INFO main - Log the final used tls related configuration
+2021-02-05 10:46:53 INFO main - tls.test.mode.enable = true
+2021-02-05 10:46:53 INFO main - tls.server.need.client.auth = none
+2021-02-05 10:46:53 INFO main - tls.server.keyPath = null
+2021-02-05 10:46:53 INFO main - tls.server.keyPassword = null
+2021-02-05 10:46:53 INFO main - tls.server.certPath = null
+2021-02-05 10:46:53 INFO main - tls.server.authClient = false
+2021-02-05 10:46:53 INFO main - tls.server.trustCertPath = null
+2021-02-05 10:46:53 INFO main - tls.client.keyPath = null
+2021-02-05 10:46:53 INFO main - tls.client.keyPassword = null
+2021-02-05 10:46:53 INFO main - tls.client.certPath = null
+2021-02-05 10:46:53 INFO main - tls.client.authServer = false
+2021-02-05 10:46:53 INFO main - tls.client.trustCertPath = null
+2021-02-05 10:46:53 INFO main - Using OpenSSL provider
+2021-02-05 10:46:54 INFO main - SSLContext created for server
+2021-02-05 10:46:54 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-02-05 10:46:54 INFO FileWatchService - FileWatchService service started
+2021-02-05 10:46:55 INFO main - The Name Server boot success. serializeType=JSON
+2021-02-05 10:47:02 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57781
+2021-02-05 10:47:02 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57781]
+2021-02-05 10:47:02 INFO RemotingExecutorThread_1 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-05 10:47:02 INFO RemotingExecutorThread_1 - new topic registered, AUTO_CREATE_TOPIC_KEY QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2021-02-05 10:47:02 INFO RemotingExecutorThread_1 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2021-02-05 10:47:02 INFO RemotingExecutorThread_1 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-05 10:47:02 INFO RemotingExecutorThread_1 - new topic registered, TopicTest QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2021-02-05 10:47:02 INFO RemotingExecutorThread_1 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2021-02-05 10:47:02 INFO RemotingExecutorThread_1 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-05 10:47:02 INFO RemotingExecutorThread_1 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2021-02-05 10:47:02 INFO RemotingExecutorThread_1 - new broker registered, 10.155.7.52:10911 HAServer: 10.155.7.52:10912
+2021-02-05 10:47:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57800
+2021-02-05 10:47:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57800]
+2021-02-05 10:47:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57800]
+2021-02-05 10:47:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57800]
+2021-02-05 10:47:54 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-05 10:47:54 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-05 10:48:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57810
+2021-02-05 10:48:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57810]
+2021-02-05 10:48:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57810]
+2021-02-05 10:48:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57810]
+2021-02-05 10:48:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57814
+2021-02-05 10:48:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57814]
+2021-02-05 10:48:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57814]
+2021-02-05 10:48:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57814]
+2021-02-05 10:48:22 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57843
+2021-02-05 10:48:22 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57843]
+2021-02-05 10:48:22 INFO RemotingExecutorThread_1 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-05 10:48:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57851
+2021-02-05 10:48:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57851]
+2021-02-05 10:48:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57851]
+2021-02-05 10:48:30 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57851]
+2021-02-05 10:49:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57859
+2021-02-05 10:49:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57859]
+2021-02-05 10:49:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57859]
+2021-02-05 10:49:00 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57859]
+2021-02-05 10:49:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57863
+2021-02-05 10:49:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57863]
+2021-02-05 10:49:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57863]
+2021-02-05 10:49:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57863]
+2021-02-05 10:49:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57871
+2021-02-05 10:49:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57871]
+2021-02-05 10:49:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57871]
+2021-02-05 10:49:30 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57871]
+2021-02-05 10:49:38 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57881
+2021-02-05 10:49:38 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57881]
+2021-02-05 10:50:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57889
+2021-02-05 10:50:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57889]
+2021-02-05 10:50:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57889]
+2021-02-05 10:50:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57889]
+2021-02-05 10:50:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57924
+2021-02-05 10:50:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57924]
+2021-02-05 10:50:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57924]
+2021-02-05 10:50:32 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57924]
+2021-02-05 10:51:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57943
+2021-02-05 10:51:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57943]
+2021-02-05 10:51:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57943]
+2021-02-05 10:51:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57943]
+2021-02-05 10:51:12 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57960
+2021-02-05 10:51:12 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57960]
+2021-02-05 10:51:12 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57960]
+2021-02-05 10:51:12 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57960]
+2021-02-05 10:51:15 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57969
+2021-02-05 10:51:15 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57969]
+2021-02-05 10:51:15 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57969]
+2021-02-05 10:51:15 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57969]
+2021-02-05 10:51:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57981
+2021-02-05 10:51:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57981]
+2021-02-05 10:51:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57981]
+2021-02-05 10:51:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57981]
+2021-02-05 10:52:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:57992
+2021-02-05 10:52:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:57992]
+2021-02-05 10:52:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57992]
+2021-02-05 10:52:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57992]
+2021-02-05 10:52:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58004
+2021-02-05 10:52:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58004]
+2021-02-05 10:52:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58004]
+2021-02-05 10:52:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58004]
+2021-02-05 10:52:47 WARN NettyServerCodecThread_2 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:57881
+2021-02-05 10:52:47 WARN NettyServerCodecThread_2 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-05 10:52:47 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:57881]
+2021-02-05 10:52:47 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:57881]
+2021-02-05 10:52:47 INFO NettyServerNIOSelector_3_1 - closeChannel: close the connection to remote address[127.0.0.1:57881] result: true
+2021-02-05 10:53:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58015
+2021-02-05 10:53:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58015]
+2021-02-05 10:53:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58018
+2021-02-05 10:53:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58018]
+2021-02-05 10:53:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58018]
+2021-02-05 10:53:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58018]
+2021-02-05 10:53:15 WARN NettyServerCodecThread_3 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:58015
+2021-02-05 10:53:15 WARN NettyServerCodecThread_3 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-05 10:53:15 INFO NettyServerNIOSelector_3_1 - closeChannel: close the connection to remote address[127.0.0.1:58015] result: true
+2021-02-05 10:53:15 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58015]
+2021-02-05 10:53:15 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58015]
+2021-02-05 10:53:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58043
+2021-02-05 10:53:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58043]
+2021-02-05 10:53:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58043]
+2021-02-05 10:53:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58043]
+2021-02-05 10:54:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58053
+2021-02-05 10:54:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58053]
+2021-02-05 10:54:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58053]
+2021-02-05 10:54:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58053]
+2021-02-05 10:54:02 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58057
+2021-02-05 10:54:02 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58057]
+2021-02-05 10:54:02 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58057]
+2021-02-05 10:54:02 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58057]
+2021-02-05 10:54:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58067
+2021-02-05 10:54:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58067]
+2021-02-05 10:54:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58067]
+2021-02-05 10:54:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58067]
+2021-02-05 10:55:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58074
+2021-02-05 10:55:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58074]
+2021-02-05 10:55:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58074]
+2021-02-05 10:55:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58074]
+2021-02-05 10:55:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58088
+2021-02-05 10:55:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58088]
+2021-02-05 10:55:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58088]
+2021-02-05 10:55:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58088]
+2021-02-05 10:56:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58096
+2021-02-05 10:56:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58096]
+2021-02-05 10:56:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58096]
+2021-02-05 10:56:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58096]
+2021-02-05 10:56:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58113
+2021-02-05 10:56:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58113]
+2021-02-05 10:56:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58113]
+2021-02-05 10:56:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58113]
+2021-02-05 10:57:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58123
+2021-02-05 10:57:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58123]
+2021-02-05 10:57:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58123]
+2021-02-05 10:57:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58123]
+2021-02-05 10:57:31 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58155
+2021-02-05 10:57:31 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58155]
+2021-02-05 10:57:31 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58155]
+2021-02-05 10:57:31 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58155]
+2021-02-05 10:57:54 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-05 10:57:54 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-05 10:58:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58163
+2021-02-05 10:58:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58163]
+2021-02-05 10:58:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58163]
+2021-02-05 10:58:01 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58163]
+2021-02-05 10:58:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58177
+2021-02-05 10:58:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58177]
+2021-02-05 10:58:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58177]
+2021-02-05 10:58:31 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58177]
+2021-02-05 10:59:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58185
+2021-02-05 10:59:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58185]
+2021-02-05 10:59:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58185]
+2021-02-05 10:59:01 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58185]
+2021-02-05 10:59:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58196
+2021-02-05 10:59:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58196]
+2021-02-05 10:59:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58196]
+2021-02-05 10:59:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58196]
+2021-02-05 11:00:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58206
+2021-02-05 11:00:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58206]
+2021-02-05 11:00:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58206]
+2021-02-05 11:00:01 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58206]
+2021-02-05 11:00:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58220
+2021-02-05 11:00:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58220]
+2021-02-05 11:00:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58220]
+2021-02-05 11:00:31 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58220]
+2021-02-05 11:01:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58230
+2021-02-05 11:01:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58230]
+2021-02-05 11:01:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58230]
+2021-02-05 11:01:01 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58230]
+2021-02-05 11:01:26 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58242
+2021-02-05 11:01:26 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58242]
+2021-02-05 11:01:26 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58242]
+2021-02-05 11:01:26 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58242]
+2021-02-05 11:01:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58252
+2021-02-05 11:01:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58252]
+2021-02-05 11:01:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58252]
+2021-02-05 11:01:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58252]
+2021-02-05 11:02:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58260
+2021-02-05 11:02:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58260]
+2021-02-05 11:02:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58260]
+2021-02-05 11:02:01 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58260]
+2021-02-05 11:02:31 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58273
+2021-02-05 11:02:31 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58273]
+2021-02-05 11:02:31 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58273]
+2021-02-05 11:02:31 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58273]
+2021-02-05 11:03:01 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58278
+2021-02-05 11:03:01 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58278]
+2021-02-05 11:03:01 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58278]
+2021-02-05 11:03:01 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58278]
+2021-02-05 11:03:31 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58289
+2021-02-05 11:03:31 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58289]
+2021-02-05 11:03:31 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58289]
+2021-02-05 11:03:31 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58289]
+2021-02-05 11:04:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58298
+2021-02-05 11:04:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58298]
+2021-02-05 11:04:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58298]
+2021-02-05 11:04:01 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58298]
+2021-02-05 11:04:03 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58304
+2021-02-05 11:04:03 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58304]
+2021-02-05 11:04:03 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58304]
+2021-02-05 11:04:03 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58304]
+2021-02-05 11:04:04 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58308
+2021-02-05 11:04:04 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58308]
+2021-02-05 11:04:04 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58308]
+2021-02-05 11:04:04 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58308]
+2021-02-05 11:04:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58313
+2021-02-05 11:04:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58313]
+2021-02-05 11:04:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58313]
+2021-02-05 11:04:31 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58313]
+2021-02-05 11:05:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58328
+2021-02-05 11:05:00 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58328]
+2021-02-05 11:05:02 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58333
+2021-02-05 11:05:02 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58333]
+2021-02-05 11:05:02 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58333]
+2021-02-05 11:05:02 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58333]
+2021-02-05 11:05:06 WARN NettyServerCodecThread_8 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:58328
+2021-02-05 11:05:06 WARN NettyServerCodecThread_8 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-05 11:05:06 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58328]
+2021-02-05 11:05:06 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58328]
+2021-02-05 11:05:06 INFO NettyServerNIOSelector_3_3 - closeChannel: close the connection to remote address[127.0.0.1:58328] result: true
+2021-02-05 11:05:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58347
+2021-02-05 11:05:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58347]
+2021-02-05 11:05:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58347]
+2021-02-05 11:05:31 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58347]
+2021-02-05 11:06:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58367
+2021-02-05 11:06:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58367]
+2021-02-05 11:06:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58367]
+2021-02-05 11:06:02 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58367]
+2021-02-05 11:06:03 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58371
+2021-02-05 11:06:03 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58371]
+2021-02-05 11:06:04 INFO RemotingExecutorThread_3 - new topic registered, topic_order QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2021-02-05 11:06:07 WARN NettyServerCodecThread_4 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:58371
+2021-02-05 11:06:07 WARN NettyServerCodecThread_4 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-05 11:06:07 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58371]
+2021-02-05 11:06:07 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58371]
+2021-02-05 11:06:07 INFO NettyServerNIOSelector_3_1 - closeChannel: close the connection to remote address[127.0.0.1:58371] result: true
+2021-02-05 11:06:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58382
+2021-02-05 11:06:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58382]
+2021-02-05 11:06:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58382]
+2021-02-05 11:06:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58382]
+2021-02-05 11:07:02 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58389
+2021-02-05 11:07:02 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58389]
+2021-02-05 11:07:02 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58389]
+2021-02-05 11:07:02 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58389]
+2021-02-05 11:07:04 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58393
+2021-02-05 11:07:04 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58393]
+2021-02-05 11:07:04 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58393]
+2021-02-05 11:07:04 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58393]
+2021-02-05 11:07:09 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58400
+2021-02-05 11:07:09 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58400]
+2021-02-05 11:07:09 INFO RemotingExecutorThread_7 - topic changed, topic_order OLD: QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0] NEW: QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=6, topicSynFlag=0]
+2021-02-05 11:07:09 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58400]
+2021-02-05 11:07:09 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58400]
+2021-02-05 11:07:21 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58411
+2021-02-05 11:07:21 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58411]
+2021-02-05 11:07:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58417
+2021-02-05 11:07:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58417]
+2021-02-05 11:07:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58417]
+2021-02-05 11:07:30 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58417]
+2021-02-05 11:07:32 WARN NettyServerCodecThread_1 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:58411
+2021-02-05 11:07:32 WARN NettyServerCodecThread_1 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-05 11:07:32 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58411]
+2021-02-05 11:07:32 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58411]
+2021-02-05 11:07:32 INFO NettyServerNIOSelector_3_3 - closeChannel: close the connection to remote address[127.0.0.1:58411] result: true
+2021-02-05 11:07:54 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-05 11:07:54 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-05 11:08:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58432
+2021-02-05 11:08:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58432]
+2021-02-05 11:08:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58432]
+2021-02-05 11:08:00 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58432]
+2021-02-05 11:08:02 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58436
+2021-02-05 11:08:02 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58436]
+2021-02-05 11:08:02 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58436]
+2021-02-05 11:08:02 INFO NettyServerCodecThread_4 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58436]
+2021-02-05 11:08:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58448
+2021-02-05 11:08:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58448]
+2021-02-05 11:08:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58448]
+2021-02-05 11:08:31 INFO NettyServerCodecThread_5 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58448]
+2021-02-05 11:09:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58458
+2021-02-05 11:09:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58458]
+2021-02-05 11:09:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58458]
+2021-02-05 11:09:01 INFO NettyServerCodecThread_6 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58458]
+2021-02-05 11:09:02 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58462
+2021-02-05 11:09:02 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58462]
+2021-02-05 11:09:02 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58462]
+2021-02-05 11:09:02 INFO NettyServerCodecThread_7 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58462]
+2021-02-05 11:09:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58472
+2021-02-05 11:09:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58472]
+2021-02-05 11:09:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58472]
+2021-02-05 11:09:30 INFO NettyServerCodecThread_8 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58472]
+2021-02-05 11:10:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58479
+2021-02-05 11:10:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58479]
+2021-02-05 11:10:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58479]
+2021-02-05 11:10:00 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58479]
+2021-02-05 11:10:57 INFO main - rocketmqHome=E:\dev2\rocketmq-custom\debughome\rocketmq_home
+2021-02-05 11:10:57 INFO main - kvConfigPath=C:\Users\13252\namesrv\kvConfig.json
+2021-02-05 11:10:57 INFO main - configStorePath=C:\Users\13252\namesrv\namesrv.properties
+2021-02-05 11:10:57 INFO main - productEnvName=center
+2021-02-05 11:10:57 INFO main - clusterTest=false
+2021-02-05 11:10:57 INFO main - orderMessageEnable=false
+2021-02-05 11:10:57 INFO main - listenPort=9876
+2021-02-05 11:10:57 INFO main - serverWorkerThreads=8
+2021-02-05 11:10:57 INFO main - serverCallbackExecutorThreads=0
+2021-02-05 11:10:57 INFO main - serverSelectorThreads=3
+2021-02-05 11:10:57 INFO main - serverOnewaySemaphoreValue=256
+2021-02-05 11:10:57 INFO main - serverAsyncSemaphoreValue=64
+2021-02-05 11:10:57 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-02-05 11:10:57 INFO main - serverSocketSndBufSize=65535
+2021-02-05 11:10:57 INFO main - serverSocketRcvBufSize=65535
+2021-02-05 11:10:57 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-02-05 11:10:57 INFO main - useEpollNativeSelector=false
+2021-02-05 11:10:58 INFO main - Server is running in TLS permissive mode
+2021-02-05 11:10:58 INFO main - Tls config file doesn't exist, skip it
+2021-02-05 11:10:58 INFO main - Log the final used tls related configuration
+2021-02-05 11:10:58 INFO main - tls.test.mode.enable = true
+2021-02-05 11:10:58 INFO main - tls.server.need.client.auth = none
+2021-02-05 11:10:58 INFO main - tls.server.keyPath = null
+2021-02-05 11:10:58 INFO main - tls.server.keyPassword = null
+2021-02-05 11:10:58 INFO main - tls.server.certPath = null
+2021-02-05 11:10:58 INFO main - tls.server.authClient = false
+2021-02-05 11:10:58 INFO main - tls.server.trustCertPath = null
+2021-02-05 11:10:58 INFO main - tls.client.keyPath = null
+2021-02-05 11:10:58 INFO main - tls.client.keyPassword = null
+2021-02-05 11:10:58 INFO main - tls.client.certPath = null
+2021-02-05 11:10:58 INFO main - tls.client.authServer = false
+2021-02-05 11:10:58 INFO main - tls.client.trustCertPath = null
+2021-02-05 11:10:58 INFO main - Using OpenSSL provider
+2021-02-05 11:10:58 INFO main - SSLContext created for server
+2021-02-05 11:10:59 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-02-05 11:10:59 INFO FileWatchService - FileWatchService service started
+2021-02-05 11:10:59 INFO main - The Name Server boot success. serializeType=JSON
+2021-02-05 11:11:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58540
+2021-02-05 11:11:14 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58540]
+2021-02-05 11:11:15 INFO RemotingExecutorThread_1 - new topic registered, AUTO_CREATE_TOPIC_KEY QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2021-02-05 11:11:15 INFO RemotingExecutorThread_1 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2021-02-05 11:11:15 INFO RemotingExecutorThread_1 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-05 11:11:15 INFO RemotingExecutorThread_1 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2021-02-05 11:11:15 INFO RemotingExecutorThread_1 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-05 11:11:15 INFO RemotingExecutorThread_1 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2021-02-05 11:11:15 INFO RemotingExecutorThread_1 - new broker registered, 10.155.7.52:10911 HAServer: 10.155.7.52:10912
+2021-02-05 11:11:59 INFO NSScheduledThread1 - --------------------------------------------------------
+2021-02-05 11:11:59 INFO NSScheduledThread1 - configTable SIZE: 0
+2021-02-05 11:12:03 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58574
+2021-02-05 11:12:03 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58574]
+2021-02-05 11:12:03 INFO RemotingExecutorThread_4 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-05 11:12:15 INFO RemotingExecutorThread_6 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-05 11:12:46 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:58592
+2021-02-05 11:12:46 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:58592]
+2021-02-05 11:12:47 INFO RemotingExecutorThread_5 - new topic registered, topic_order QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2021-02-05 11:12:47 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58592]
+2021-02-05 11:12:47 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58592]
+2021-02-05 11:12:56 WARN NettyServerCodecThread_2 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:58574
+2021-02-05 11:12:56 WARN NettyServerCodecThread_2 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-05 11:12:56 INFO NettyEventExecutor - the broker's channel destroyed, 10.155.7.52:10800, clean it's data structure at once
+2021-02-05 11:12:56 INFO NettyEventExecutor - remove brokerAddr[1, 10.155.7.52:10800] from brokerAddrTable, because channel destroyed
+2021-02-05 11:12:56 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58574]
+2021-02-05 11:12:56 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58574]
+2021-02-05 11:12:56 INFO NettyServerNIOSelector_3_2 - closeChannel: close the connection to remote address[127.0.0.1:58574] result: true
+2021-02-05 11:12:58 WARN NettyServerCodecThread_1 - NETTY SERVER PIPELINE: exceptionCaught 127.0.0.1:58540
+2021-02-05 11:12:58 WARN NettyServerCodecThread_1 - NETTY SERVER PIPELINE: exceptionCaught exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[na:1.8.0_251]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[na:1.8.0_251]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[na:1.8.0_251]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:221) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:899) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:275) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:119) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:652) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:575) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:489) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:451) ~[netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140) [netty-all-4.0.42.Final.jar:4.0.42.Final]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_251]
+2021-02-05 11:12:58 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:58540]
+2021-02-05 11:12:58 INFO NettyServerNIOSelector_3_1 - closeChannel: close the connection to remote address[127.0.0.1:58540] result: true
+2021-02-05 11:12:58 INFO NettyEventExecutor - the broker's channel destroyed, 10.155.7.52:10911, clean it's data structure at once
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove brokerAddr[0, 10.155.7.52:10911] from brokerAddrTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove brokerName[broker-a] from brokerAddrTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove brokerName[broker-a], clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove the clusterName[DefaultCluster] from clusterAddrTable, because channel destroyed and no broker in this cluster
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[RMQ_SYS_TRANS_HALF_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[broker-a] all queue, from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[AUTO_CREATE_TOPIC_KEY QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[AUTO_CREATE_TOPIC_KEY] all queue, from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:58540]
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[SELF_TEST_TOPIC] all queue, from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[topic_order QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[topic_order] all queue, from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[BenchmarkTest] all queue, from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[DefaultCluster] all queue, from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]], from topicQueueTable, because channel destroyed
+2021-02-05 11:12:58 INFO NettyEventExecutor - remove topic[OFFSET_MOVED_EVENT] all queue, from topicQueueTable, because channel destroyed
+2021-02-05 14:01:35 INFO main - rocketmqHome=E:\dev2\rocketmq-custom\debughome\rocketmq_home
+2021-02-05 14:01:35 INFO main - kvConfigPath=C:\Users\13252\namesrv\kvConfig.json
+2021-02-05 14:01:35 INFO main - configStorePath=C:\Users\13252\namesrv\namesrv.properties
+2021-02-05 14:01:35 INFO main - productEnvName=center
+2021-02-05 14:01:35 INFO main - clusterTest=false
+2021-02-05 14:01:35 INFO main - orderMessageEnable=false
+2021-02-05 14:01:35 INFO main - listenPort=9876
+2021-02-05 14:01:35 INFO main - serverWorkerThreads=8
+2021-02-05 14:01:35 INFO main - serverCallbackExecutorThreads=0
+2021-02-05 14:01:35 INFO main - serverSelectorThreads=3
+2021-02-05 14:01:35 INFO main - serverOnewaySemaphoreValue=256
+2021-02-05 14:01:35 INFO main - serverAsyncSemaphoreValue=64
+2021-02-05 14:01:35 INFO main - serverChannelMaxIdleTimeSeconds=120
+2021-02-05 14:01:35 INFO main - serverSocketSndBufSize=65535
+2021-02-05 14:01:35 INFO main - serverSocketRcvBufSize=65535
+2021-02-05 14:01:35 INFO main - serverPooledByteBufAllocatorEnable=true
+2021-02-05 14:01:35 INFO main - useEpollNativeSelector=false
+2021-02-05 14:01:35 INFO main - Server is running in TLS permissive mode
+2021-02-05 14:01:35 INFO main - Tls config file doesn't exist, skip it
+2021-02-05 14:01:35 INFO main - Log the final used tls related configuration
+2021-02-05 14:01:35 INFO main - tls.test.mode.enable = true
+2021-02-05 14:01:35 INFO main - tls.server.need.client.auth = none
+2021-02-05 14:01:35 INFO main - tls.server.keyPath = null
+2021-02-05 14:01:35 INFO main - tls.server.keyPassword = null
+2021-02-05 14:01:35 INFO main - tls.server.certPath = null
+2021-02-05 14:01:35 INFO main - tls.server.authClient = false
+2021-02-05 14:01:35 INFO main - tls.server.trustCertPath = null
+2021-02-05 14:01:35 INFO main - tls.client.keyPath = null
+2021-02-05 14:01:35 INFO main - tls.client.keyPassword = null
+2021-02-05 14:01:35 INFO main - tls.client.certPath = null
+2021-02-05 14:01:35 INFO main - tls.client.authServer = false
+2021-02-05 14:01:35 INFO main - tls.client.trustCertPath = null
+2021-02-05 14:01:36 INFO main - Using OpenSSL provider
+2021-02-05 14:01:36 INFO main - SSLContext created for server
+2021-02-05 14:01:37 INFO NettyEventExecutor - NettyEventExecutor service started
+2021-02-05 14:01:37 INFO FileWatchService - FileWatchService service started
+2021-02-05 14:01:37 INFO main - The Name Server boot success. serializeType=JSON
+2021-02-05 14:01:49 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:1165
+2021-02-05 14:01:49 INFO NettyServerCodecThread_1 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:1165]
+2021-02-05 14:01:49 INFO RemotingExecutorThread_1 - new topic registered, RMQ_SYS_TRANS_HALF_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-05 14:01:49 INFO RemotingExecutorThread_1 - new topic registered, topic_order QueueData [brokerName=broker-a, readQueueNums=4, writeQueueNums=4, perm=6, topicSynFlag=0]
+2021-02-05 14:01:49 INFO RemotingExecutorThread_1 - new topic registered, AUTO_CREATE_TOPIC_KEY QueueData [brokerName=broker-a, readQueueNums=8, writeQueueNums=8, perm=7, topicSynFlag=0]
+2021-02-05 14:01:49 INFO RemotingExecutorThread_1 - new topic registered, BenchmarkTest QueueData [brokerName=broker-a, readQueueNums=1024, writeQueueNums=1024, perm=6, topicSynFlag=0]
+2021-02-05 14:01:49 INFO RemotingExecutorThread_1 - new topic registered, OFFSET_MOVED_EVENT QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-05 14:01:49 INFO RemotingExecutorThread_1 - new topic registered, broker-a QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=7, topicSynFlag=0]
+2021-02-05 14:01:49 INFO RemotingExecutorThread_1 - new topic registered, SELF_TEST_TOPIC QueueData [brokerName=broker-a, readQueueNums=1, writeQueueNums=1, perm=6, topicSynFlag=0]
+2021-02-05 14:01:49 INFO RemotingExecutorThread_1 - new topic registered, DefaultCluster QueueData [brokerName=broker-a, readQueueNums=16, writeQueueNums=16, perm=7, topicSynFlag=0]
+2021-02-05 14:01:49 INFO RemotingExecutorThread_1 - new broker registered, 10.155.7.52:10911 HAServer: 10.155.7.52:10912
+2021-02-05 14:02:03 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:1202
+2021-02-05 14:02:03 INFO NettyServerCodecThread_2 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:1202]
+2021-02-05 14:02:03 INFO RemotingExecutorThread_3 - new broker registered, 10.155.7.52:10800 HAServer: 10.155.7.52:10801
+2021-02-05 14:02:22 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelRegistered 127.0.0.1:1224
+2021-02-05 14:02:22 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelActive, the channel[127.0.0.1:1224]
+2021-02-05 14:02:22 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelInactive, the channel[127.0.0.1:1224]
+2021-02-05 14:02:22 INFO NettyServerCodecThread_3 - NETTY SERVER PIPELINE: channelUnregistered, the channel[127.0.0.1:1224]

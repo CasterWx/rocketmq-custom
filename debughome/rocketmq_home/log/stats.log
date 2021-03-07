@@ -1,0 +1,12 @@
+2021-02-04 12:55:00 INFO - [BROKER_PUT_NUMS] [DefaultCluster] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:55:00 INFO - [TOPIC_PUT_NUMS] [TopicTest] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:55:00 INFO - [TOPIC_PUT_SIZE] [TopicTest] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:56:00 INFO - [BROKER_PUT_NUMS] [DefaultCluster] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:56:00 INFO - [TOPIC_PUT_NUMS] [TopicTest] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:56:00 INFO - [TOPIC_PUT_SIZE] [TopicTest] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:57:00 INFO - [BROKER_PUT_NUMS] [DefaultCluster] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:57:00 INFO - [TOPIC_PUT_NUMS] [TopicTest] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:57:00 INFO - [TOPIC_PUT_SIZE] [TopicTest] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:58:00 INFO - [BROKER_PUT_NUMS] [DefaultCluster] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:58:00 INFO - [TOPIC_PUT_NUMS] [TopicTest] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
+2021-02-04 12:58:00 INFO - [TOPIC_PUT_SIZE] [TopicTest] Stats In One Minute, SUM: 0 TPS: 0.00 AVGPT: 0.00
